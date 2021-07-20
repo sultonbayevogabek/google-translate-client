@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Google Translate</title>
+   <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="header">
+   <div class="flex-container">
+      <div class="header__left">
+         <button class="header__menu-btn">
+            <img src="img/menu.png" alt="">
+         </button>
+         <a class="header__logo" href="#">
+            <img src="img/google.png" alt="">
+         </a>
+      </div>
+      <div class="header__right">
+         <button class="header__points-btn">
+            <img src="img/points.svg" alt="">
+         </button>
+         <a class="header__user" href="#">
+            <img src="https://i.pravatar.cc/32?img=3" alt="">
+         </a>
+      </div>
+   </div>
+</header>
+<main class="main">
+   <div class="main__top">
+      <div class="flex-container">
+         <a class="main__top__btns" href="">
+            <img src="img/main-top-btns.png" alt="">
+         </a>
+      </div>
+   </div>
+   <div class="main__bottom">
+      <div class="flex-container">
+         <div class="translator">
+            <header class="translator__header">
+               <div class="translator__header__left">
+                  <div class="languages__define">
+                     определить язык
+                  </div>
+                  <ul class="languages__list">
+                     <li class="languages__item" data-from-language-item>
+                        узбекский
+                     </li>
+                     <li class="languages__item" data-from-language-item>
+                        английский
+                     </li>
+                     <li class="languages__item" data-from-language-item>
+                        русский
+                     </li>
+                  </ul>
+                  <button class="translator__header__arrow">
+                     <img src="img/down-arrow.svg" alt="">
+                  </button>
+               </div>
+               <button class="translator__header__arrows">
+                  <img src="img/two-arrows-pointing-right-and-left.svg" alt="">
+               </button>
+               <div class="translator__header__right">
+                  <ul class="languages__list">
+                     <li class="languages__item" data-to-language-item>
+                        узбекский
+                     </li>
+                     <li class="languages__item" data-to-language-item>
+                        английский
+                     </li>
+                     <li class="languages__item" data-to-language-item>
+                        русский
+                     </li>
+                  </ul>
+                  <button class="translator__header__arrow">
+                     <img src="img/down-arrow.svg" alt="">
+                  </button>
+               </div>
+            </header>
+            <main class="translator__main">
+               <div class="translator__main__left">
+                  <textarea class="translator__input-field" id="from-language-field" maxlength="5000"></textarea>
+                  <button class="translator__input-clear d-none">
+                     <img src="img/times.png" alt="">
+                  </button>
+               </div>
+               <div class="translator__main__right">
+                            <textarea class="translator__input-field" id="to-language-field" placeholder="Перевод"
+                                      readonly></textarea>
+               </div>
+            </main>
+            <footer class="translator__footer">
+               <div class="translator__footer__left">
+                  <button>
+                     <img src="img/microphone.svg" alt="">
+                  </button>
+                  <button>
+                     <img src="img/volume.svg" alt="">
+                  </button>
+                  <span class="translator__footer__counter"><span id="letter-count">0</span> / 5000</span>
+               </div>
+               <div class="translator__footer__right">
+                  <button>
+                     <img src="img/volume.svg" alt="">
+                  </button>
+                  <div class="translator__footer__actions">
+                     <button>
+                        <img src="img/copy.svg" alt="">
+                     </button>
+                     <button>
+                        <img src="img/edit.svg" alt="">
+                     </button>
+                     <button>
+                        <img src="img/share.svg" alt="">
+                     </button>
+                  </div>
+               </div>
+            </footer>
+         </div>
+      </div>
+   </div>
+</main>
+<footer class="footer">
+   <div class="footer__item">
+      <div class="footer__item__top">
+         <img src="img/reload-time.svg" alt="">
+      </div>
+      <div class="footer__item__bottom">
+         История
+      </div>
+   </div>
+   <div class="footer__item">
+      <div class="footer__item__top">
+         <img src="img/star.svg" alt="">
+      </div>
+      <div class="footer__item__bottom">
+         Сохраненные
+      </div>
+   </div>
+   <div class="footer__item">
+      <div class="footer__item__top">
+         <img src="img/two-men.svg" alt="">
+      </div>
+      <div class="footer__item__bottom">
+         Предложить
+      </div>
+   </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
